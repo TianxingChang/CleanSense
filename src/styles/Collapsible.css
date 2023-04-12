@@ -1,0 +1,59 @@
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  box-shadow: 0px 5px 10px 0px rgba(234, 221, 228, 0.583);
+  border-radius: 10px;
+}
+
+.content {
+  background-color: #efe3e3;
+  height: 18vh;
+  border-radius: 0 0 10px 10px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  height: 6vh;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  align-items: center;
+  background-color: transparent;
+  border: rgb(238, 231, 231);
+}
+
+.id_card {
+  width: 60%;
+  border-radius: 0px 10px 10px 0px;
+  border: rgb(211, 205, 205);
+  background-color: rgb(241, 231, 231);
+  height: 100%;
+  font-size: 23px;
+  text-align: center;
+  align-items: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.time_card {
+  width: 40%;
+  height: 100%;
+  border: rgb(211, 205, 205);
+  background-color: rgb(241, 231, 231);
+  font-size: 23px;
+  align-items: center;
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "Chivo Mono";
+  src: url(../assets/Chivo_Mono/ChivoMono-VariableFont_wght.ttf)
+    format("truetype");
+}

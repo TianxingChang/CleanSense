@@ -1,0 +1,20 @@
+.App {
+  background-color: black;
+  min-height: 100vh;
+  align-items: center;
+  min-width: 50vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Chivo Mono";
+  src: url(../assets/Chivo_Mono/ChivoMono-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+.title {
+  color: white;
+  width: 80%;
+}
