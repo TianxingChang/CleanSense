@@ -1,5 +1,6 @@
 import "../styles/Collapsible.css";
 import { useState } from "react";
+import Guide from "../assets/images/guide.png";
 
 export default function Collapsible() {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,18 @@ export default function Collapsible() {
           lg1
         </div>
       </button>
-      {open && <div className="content">Lorem ipsum...</div>}
+      {open && (
+        <div className="content">
+          <div className="left-content">
+            <div className="cub-num">cubcibles left</div>
+            <div className="people-num"> people inside</div>
+            <div className="report-num"> bad hygiene level</div>
+          </div>
+          <div className="right-content">
+            <img src={Guide} className="guide" alt="guide me" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

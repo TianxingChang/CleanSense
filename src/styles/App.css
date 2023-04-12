@@ -18,3 +18,35 @@
   color: white;
   width: 80%;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  height: 6em;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* border-top: 1px solid #565454; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  height: 100px;
+}
+footer img {
+  margin-left: 0.5rem;
+}
+footer a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: grey;
+}

@@ -12,6 +12,8 @@ export default function CardZone(prop) {
         <Collapsible />
         <Collapsible />
         <Collapsible />
+        <Collapsible />
+        <Collapsible />
         {/* <div
           className="time_card"
           style={{

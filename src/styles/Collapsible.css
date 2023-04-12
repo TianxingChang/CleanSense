@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  box-shadow: 0px 5px 10px 0px rgba(234, 221, 228, 0.583);
+  /* box-shadow: 0px 5px 10px 0px rgba(234, 221, 228, 0.583); */
   border-radius: 10px;
 }
 
@@ -11,6 +11,47 @@
   background-color: #efe3e3;
   height: 18vh;
   border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.left-content {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: inherit;
+}
+
+.right-content {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  width: 35%;
+}
+
+.cub-num {
+  width: 100%;
+  text-align: center;
+  /* background-color: blueviolet; */
+}
+
+.people-num {
+  width: 100%;
+  /* background-color: blueviolet; */
+  text-align: center;
+}
+
+.report-num {
+  width: 100%;
+  text-align: center;
+  /* background-color: blueviolet; */
 }
 
 .button {
@@ -31,12 +72,14 @@
   border: rgb(211, 205, 205);
   background-color: rgb(241, 231, 231);
   height: 100%;
-  font-size: 23px;
+  font-size: 17px;
   text-align: center;
   align-items: center;
   color: black;
   display: flex;
   justify-content: center;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .time_card {
@@ -44,16 +87,23 @@
   height: 100%;
   border: rgb(211, 205, 205);
   background-color: rgb(241, 231, 231);
-  font-size: 23px;
+  font-size: 17px;
   align-items: center;
   text-align: center;
   color: black;
   display: flex;
   justify-content: center;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "Chivo Mono";
   src: url(../assets/Chivo_Mono/ChivoMono-VariableFont_wght.ttf)
     format("truetype");
+}
+
+.guide {
+  border-radius: 10px;
+  max-width: 65%;
 }
