@@ -1,7 +1,6 @@
+import "../styles/Setting.css";
+import React from "react";
+
 export default function Setting() {
-  return (
-    <>
-      <h1>Hello</h1>;
-    </>
-  );
+  return <div className="setting">Account Setting</div>;
 }

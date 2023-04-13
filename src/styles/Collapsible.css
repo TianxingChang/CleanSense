@@ -106,4 +106,17 @@
 .guide {
   border-radius: 10px;
   max-width: 65%;
+  max-height: 70%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.583);
+}
+
+.link-guide {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* background-color: rgba(0, 255, 255, 0.248); */
+
+  border-radius: 0 0 10px 0;
 }

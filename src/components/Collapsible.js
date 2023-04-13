@@ -1,6 +1,7 @@
 import "../styles/Collapsible.css";
 import { useState } from "react";
 import Guide from "../assets/images/guide.png";
+import { Link, Router } from "react-router-dom";
 
 export default function Collapsible() {
   const [open, setOpen] = useState(false);
@@ -33,7 +34,9 @@ export default function Collapsible() {
             <div className="report-num"> bad hygiene level</div>
           </div>
           <div className="right-content">
-            <img src={Guide} className="guide" alt="guide me" />
+            <Link to="/GuidePage" className="link-guide">
+              <img src={Guide} className="guide" alt="guide me" />
+            </Link>
           </div>
         </div>
       )}

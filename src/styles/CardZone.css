@@ -2,7 +2,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 60px;
 }
 .card_container {
   width: 75%;
@@ -17,4 +21,9 @@
   font-family: "Chivo Mono";
   src: url(../assets/Chivo_Mono/ChivoMono-VariableFont_wght.ttf)
     format("truetype");
+}
+
+.title {
+  color: white;
+  width: 75%;
 }
