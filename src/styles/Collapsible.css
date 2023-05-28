@@ -8,14 +8,12 @@
 }
 
 .content {
-  background-color: #efe3e3;
+  background-color: #ece6e6;
   height: 18vh;
   border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: row;
   color: black;
-  font-family: monospace;
-  font-weight: bold;
 }
 
 .left-content {
@@ -24,7 +22,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: inherit;
+  border-radius: 0 0 0 10px;
 }
 
 .right-content {
@@ -32,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: inherit;
+  border-radius: 0 0 10px 0;
   width: 35%;
 }
 
@@ -68,8 +66,7 @@
 
 .id_card {
   width: 60%;
-  border-radius: 0px 10px 10px 0px;
-  border: rgb(211, 205, 205);
+  border-radius: 10px;
   background-color: rgb(241, 231, 231);
   height: 100%;
   font-size: 17px;
@@ -78,7 +75,7 @@
   color: black;
   display: flex;
   justify-content: center;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -86,15 +83,14 @@
   width: 40%;
   height: 100%;
   border: rgb(211, 205, 205);
-  background-color: rgb(241, 231, 231);
+  /* background-color: white; */
   font-size: 17px;
   align-items: center;
   text-align: center;
   color: black;
   display: flex;
   justify-content: center;
-  font-family: monospace;
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -119,4 +115,50 @@
   /* background-color: rgba(0, 255, 255, 0.248); */
 
   border-radius: 0 0 10px 0;
+}
+
+.cub-num {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.people-num {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.report-num {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.cub {
+  border-radius: 3px;
+  width: 30%;
+  color: rgb(82, 53, 215);
+  text-align: end;
+}
+
+.people {
+  border-radius: 5px;
+  width: 30%;
+  color: rgb(82, 53, 215);
+  text-align: end;
+}
+
+.hygiene {
+  border-radius: 5px;
+  color: rgb(82, 53, 215);
+  width: 30%;
+  text-align: end;
+}
+
+.info {
+  width: 80%;
 }

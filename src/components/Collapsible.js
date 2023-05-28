@@ -1,11 +1,14 @@
 import "../styles/Collapsible.css";
 import { useState } from "react";
 import Guide from "../assets/images/guide.png";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function Collapsible() {
+export default function Collapsible(prop) {
+  const time = prop.Array[0];
+  const id = prop.Array[1][0]; // lg1-01
+  const info = prop.Array[1][1]; // {cub:3, people:3, hygiene:'good'}
+
   const [open, setOpen] = useState(false);
-
   const toggle = () => {
     setOpen(!open);
   };
@@ -15,23 +18,36 @@ export default function Collapsible() {
       <button type="button" className="button" onClick={toggle}>
         <div
           className="time_card"
-          style={{ borderRadius: open ? "10px 0 0 0" : "10px 0 0 10px" }}
+          style={{
+            backgroundColor: open ? "rgb(241, 231, 231)" : "black",
+            borderRadius: open ? "10px 0 0 0" : "10px 0 0 10px",
+            color: time >= 5 ? "red" : time ? "rgb(200,140,20)" : "green",
+          }}
         >
-          Available
+          {time ? time + " min" : "Available"}
         </div>
         <div
           className="id_card"
-          style={{ borderRadius: open ? "0 10px 0 0" : "0 10px 10px 0" }}
+          style={{ borderRadius: open ? "0 10px 0 0" : "10px" }}
         >
-          lg1
+          {id}
         </div>
       </button>
       {open && (
         <div className="content">
           <div className="left-content">
-            <div className="cub-num">cubcibles left</div>
-            <div className="people-num"> people inside</div>
-            <div className="report-num"> bad hygiene level</div>
+            <div className="cub-num">
+              <div className="cub">{info.cub}</div>
+              <div className="info">cubcibles left</div>
+            </div>
+            <div className="people-num">
+              <div className="people">{info.people}</div>
+              <div className="info">people inside</div>
+            </div>
+            <div className="report-num">
+              <div className="hygiene">{info.hygiene}</div>
+              <div className="info">hygiene level</div>
+            </div>
           </div>
           <div className="right-content">
             <Link to="/GuidePage" className="link-guide">
